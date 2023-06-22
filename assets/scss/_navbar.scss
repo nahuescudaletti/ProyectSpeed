@@ -1,0 +1,21 @@
+.boton {
+    min-width: 15%; /* Ajusta el porcentaje según tus necesidades */
+    height: 3vw; /* Ajusta el valor según tus necesidades */
+    color: #fff;
+    padding: 0.5vw 1vw; /* Ajusta el valor según tus necesidades */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 0.3vw solid #1FD0E8; /* Ajusta el valor según tus necesidades */
+    background: #1FD0E8;
+  }
+  
+  .boton:hover {
+    background: #fff;
+    color: #1FD0E8;
+  }
+  
