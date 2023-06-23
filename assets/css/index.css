@@ -1,21 +1,40 @@
-@charset "UTF-8";
-.boton {
-  min-width: 15%; /* Ajusta el porcentaje según tus necesidades */
-  height: 3vw; /* Ajusta el valor según tus necesidades */
-  color: #fff;
-  padding: 0.5vw 1vw; /* Ajusta el valor según tus necesidades */
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 20px;
-  border: 0.3vw solid #1FD0E8; /* Ajusta el valor según tus necesidades */
-  background: #1FD0E8;
+.nav-item {
+  font-family: "Lato", sans-serif;
+  font-size: large;
 }
 
-.boton:hover {
-  background: #fff;
-  color: #1FD0E8;
+.section {
+  margin-top: 80px;
+  padding-top: 30px;
+  background-image: url("../img/fondofooter.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.cardtn {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card-itemtn {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.002);
+  transition: transform 0.2s linear;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
 }/*# sourceMappingURL=index.css.map */
