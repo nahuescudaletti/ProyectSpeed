@@ -18,7 +18,6 @@ body{
 
 /* SECTION CARD */
 section {
-  margin-top: 80px;
   padding-top: 10px;
 }
 
@@ -189,4 +188,71 @@ ul.list-unstyled li i {
   color: #484848;
 }
 
+/* COMO FUNCIONA */
+
+.fun{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0 0 10px 2px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.ri-question-line {
+  color: #1FE8B8; /* Cambia el color a tu elección */
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 6px;
+}
+.func{
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.linee{
+  border-bottom: 1px solid #97e0cf4f;
+}
+.psub{
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* BENEFICIOS */
+.count-box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.count-box i {
+  color: #1FE8B8; /* Cambia el color a tu elección */
+  font-size: 25px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.count-box .purecounter {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.count-box p {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 17px;
+}
+
+/* FOTOS */
+
+.img-thumbnail {
+  border-color: #1FE8B8 !important; /* Cambia el color del borde aquí */
+}
 
