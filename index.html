@@ -22,8 +22,8 @@
     <title>This Night x Speed</title>
 </head>
 <body>
-    <header id="header" class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #271657;">
+    <header >
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #271657;">
             <div class="container">
                 <a class="navbar-brand" href="#header">
                     <img src="./assets/img/ghghjg (1).png" alt="" class="img-fluid">
@@ -35,21 +35,21 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link text-white" href="#header">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link text-white" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#quees">¿Qué es?</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#comofunciona">¿Cómo funciona?</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#beneficios">Beneficios</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Experiencias</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#experiencias">Experiencias</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="section">
-        <div class="container-fluid mt-5">
-          <div class="row d-flex flex-wrap justify-content-center py-5">
+    <section class="section" id='home'>
+        <div class="container-fluid">
+          <div class="row d-flex flex-wrap justify-content-center">
             <div class="col-lg-5 col-md-5 col-sm-8  pt-5" data-aos="fade-up" data-aos-duration="2000"> <!-- Utiliza col-sm-8 en lugar de col-lg-5 y col-md-5 -->
               <h2 class="h2-header">
                 Login
@@ -58,8 +58,8 @@
               <h3 class="h3-header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam est vel magni ea nostrum, magnam be</h3>
 
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-8 col-12 cardthisnight py-3" data-aos="fade-left" data-aos-duration="2000"> <!-- Utiliza col-sm-8 en lugar de col-lg-4 y col-md-5, y col-12 en lugar de col-7 -->
-              <div class="text-center card-container cardtn pt-4">
+            <div class="col-lg-4 col-md-5 col-sm-8 col-12 cardthisnight" data-aos="fade-left" data-aos-duration="2000"> <!-- Utiliza col-sm-8 en lugar de col-lg-4 y col-md-5, y col-12 en lugar de col-7 -->
+              <div class="text-center card-container cardtn mt-5">
                 <img src="./assets/img/cardthisnight.png" alt="Imagen" class="img-fluid mx-auto card-itemtn"> <!-- Agrega la clase img-fluid -->
               </div>
             </div>
@@ -70,9 +70,9 @@
     
     
     <main class="">
-        <section >
+        <section  id='quees'>
             <div class="container containerquees" >
-                <div class="container position-relative quees py-5 mt-5 " data-aos="fade-up" data-aos-duration="1000">
+                <div class="container position-relative quees mb-3" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="title titlequees h2-main">¿QUÉ ES?</h2>
                 </div>
                 <div class="row content" data-aos="fade-up" data-aos-duration="2000">
@@ -94,13 +94,13 @@
     
        <section>
             <div class="container containerquees">
-                <div class="container-custom position-relative quees pb-5"  data-aos="fade-up" data-aos-duration="1000">
+                <div class="container-custom position-relative quees aos-init aos-animate mb-3"  data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="title-custom titlequees h2-main">Características</h2>
                     <p>Adaptable a todo tipo de evento</p>
                 </div>
                 <div class="row content">
-                    <div class="col-lg-3 col-md-6 px-4 my-3" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card-custom">
+                    <div class="col-lg-3 col-md-6 px-4 my-3 icon-box">
+                        <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <div class="card-custom-body">
                             <div class="icon-custom"><i class='bx bx-cloud'></i></div>
                             <h4 class="titlecard-custom">Backend web</h4>
@@ -108,8 +108,8 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 px-4 my-3" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="card-custom">
+                    <div class="col-lg-3 col-md-6 px-4 my-3">
+                        <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <div class="card-custom-body">
                             <div class="icon-custom"><i class='bx bx-smile'></i></div>
                             <h4 class="titlecard-custom">Backend web</h4>
@@ -117,91 +117,91 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 px-4 my-3" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="card-custom">
+                      <div class="col-lg-3 col-md-6 px-4 my-3">
+                        <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="card-custom-body">
-                            <div class="icon-custom"><i class='bx bx-coin-stack' ></i></div>
+                            <div class="icon-custom"><i class='bx bx-smile'></i></div>
                             <h4 class="titlecard-custom">Backend web</h4>
                             <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 px-4 my-3" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="card-custom">
-                        <div class="card-custom-body">
-                            <div class="icon-custom"><i class='bx bx-world' ></i></div>
-                            <h4 class="titlecard-custom">Backend web</h4>
-                            <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
+                    <div class="col-lg-3 col-md-6 px-4 my-3">
+                      <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                      <div class="card-custom-body">
+                          <div class="icon-custom"><i class='bx bx-smile'></i></div>
+                          <h4 class="titlecard-custom">Backend web</h4>
+                          <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comofunciona" class="pb-1">
+            <div class="container containerquees">
+                <div class="container position-relative quees mb-3" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="title titlequees h2-main ">¿CÓMO FUNCIONA?</h2>
+                </div>
+                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <i class="ri-question-line"></i>
+                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
                         </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="func">
+                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
+                        </p>
+                    </div>
+                </div>
+                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <i class="ri-question-line"></i>
+                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
                         </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="func">
+                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
+                        </p>
+                    </div>
+                </div>
+                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <i class="ri-question-line"></i>
+                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="func">
+                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
+                        </p>
+                    </div>
+                </div>
+                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <i class="ri-question-line"></i>
+                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="func">
+                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="beneficios">
             <div class="container containerquees">
-                <div class="container position-relative quees pb-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="title titlequees h2-main">¿CÓMO FUNCIONA?</h2>
-                </div>
-                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="col-lg-5">
-                        <div class="d-flex align-items-center">
-                            <i class="ri-question-line"></i>
-                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="func">
-                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
-                        </p>
-                    </div>
-                </div>
-                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="col-lg-5">
-                        <div class="d-flex align-items-center">
-                            <i class="ri-question-line"></i>
-                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="func">
-                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
-                        </p>
-                    </div>
-                </div>
-                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="col-lg-5">
-                        <div class="d-flex align-items-center">
-                            <i class="ri-question-line"></i>
-                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="func">
-                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
-                        </p>
-                    </div>
-                </div>
-                <div class="row faq-item d-flex align-items-stretch linee py-3 my-2" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="col-lg-5">
-                        <div class="d-flex align-items-center">
-                            <i class="ri-question-line"></i>
-                            <h3 class="fun">¿Cómo funciona el sistema de cobro?</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="func">
-                            El visitante pide su comida y/o bebidas y paga acercando la pulsera a los dispositivos de cobro operados por el staff. Una vez confirmada la transacción, el importe de la compra se resta automáticamente del saldo de la pulsera.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container containerquees">
-                <div class="container-custom position-relative quees pb-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="container-custom position-relative quees mb-5" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="title-custom titlequees h2-main">BENEFICIOS</h2>
                     <p class="psub">Además de ser una tendencia mundial, esta solución tiene varios beneficios tanto para el organizador como para el consumidor</p>
                 </div>
@@ -281,12 +281,12 @@
             </div>
         </section>
         
-        <section>
+        <section id="experiencias">
             <div class="container containerquees">
-              <div class="container position-relative quees pb-5" data-aos="fade-up" data-aos-duration="2000">
+              <div class="container position-relative quees" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="title titlequees h2-main">Experiencias</h2>
               </div>
-              <div class="row portfolio-container">
+              <div class="row portfolio-container mt-5">
                 <div class="col-lg-4 col-md-6 portfolio-item filter-Mute mb-4" data-aos="zoom-in"  data-aos-duration="1000">
                   <div class="portfolio-wrap">
                     <img src="./assets/img/lio.jpg" class="img-fluid img-thumbnail col-10" alt="">

@@ -1,10 +1,11 @@
 body{
-  background-image: url("../img/fondofooter.jpg");
-  background-size: 100% 100%;
+  background-color: #130826;
+  background-size: 100%;
   background-position: center;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
+  height: 100vh;
 }
 
 /* NAVBAR */
@@ -18,7 +19,7 @@ body{
 
 /* SECTION CARD */
 section {
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 .cardtn {
