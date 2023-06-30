@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,13 +57,39 @@
               </h2>
               <h3 class="h3-header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam est vel magni ea nostrum, magnam be</h3>
               <h3 class="h3-header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam est vel magni ea nostrum, magnam be</h3>
-
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-8 col-12 cardthisnight" data-aos="fade-left" data-aos-duration="2000"> <!-- Utiliza col-sm-8 en lugar de col-lg-4 y col-md-5, y col-12 en lugar de col-7 -->
+           <div class="col-lg-4 col-md-5 col-sm-8 col-12 cardthisnight" data-aos="fade-left" data-aos-duration="2000">
               <div class="text-center card-container cardtn mt-5">
-                <img src="./assets/img/cardthisnight.png" alt="Imagen" class="img-fluid mx-auto card-itemtn"> <!-- Agrega la clase img-fluid -->
+                <img id="imagenCambiante" src="./assets/img/cardthisnight.png" alt="Imagen" class="img-fluid mx-auto card-itemtn">
               </div>
             </div>
+
+            <script>
+              // Arreglo con las URLs de las imágenes a mostrar
+              var imagenes = [
+                "./assets/img/Opción-3-frente.png",
+                "./assets/img/Opción-1-frente.png",
+                "./assets/img/Opción-2-frente.png"
+                // Agrega más URLs de imágenes si deseas mostrar más de una
+              ];
+
+              var indice = 0; // Variable para llevar el control del índice de la imagen actual
+
+              function cambiarImagen() {
+                // Cambiar la fuente de la imagen actual
+                document.getElementById("imagenCambiante").src = imagenes[indice];
+
+                // Incrementar el índice para pasar a la siguiente imagen
+                indice++;
+                if (indice === imagenes.length) {
+                  indice = 0; // Si se llega al final del arreglo, se reinicia el índice
+                }
+              }
+
+              // Llamar a la función cambiarImagen cada 5 segundos (5000 milisegundos)
+              setInterval(cambiarImagen, 4000);
+            </script>
+
           </div>
         </div>
     </section>
@@ -77,8 +104,8 @@
                 </div>
                 <div class="row content" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-lg-6 px-4">
-                        <p><b>This Night</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Csaodi coasie coas sMollitia nostrum rerum nobis ad nesciunt non suscipit sequi pariatur, architecto optio!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum.</p>
+                        <p><b>This Night</b> convierte a las tarjetas con tecnología NFC en una billetera virtual permitiendo al público general consumir dentro del evento sin la necesidad de usar efectivo, tarjetas o ningún otro medio de pago.</p>
+                        <p>Al mismo tiempo crea una experiencia de compra más práctica, segura y transparente.</p>
                     </div>
                     <div class="col-lg-6 px-4">
                         <ul class="list-unstyled">
@@ -104,7 +131,7 @@
                         <div class="card-custom-body">
                             <div class="icon-custom"><i class='bx bx-cloud'></i></div>
                             <h4 class="titlecard-custom">Backend web</h4>
-                            <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
+                            <p class="descriptioncard-custom">This Night cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on-line. Dashboard de estadísticas de consumos y más.</p>
                         </div>
                         </div>
                     </div>
@@ -112,8 +139,8 @@
                         <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <div class="card-custom-body">
                             <div class="icon-custom"><i class='bx bx-smile'></i></div>
-                            <h4 class="titlecard-custom">Backend web</h4>
-                            <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
+                            <h4 class="titlecard-custom">Fácil de usar</h4>
+                            <p class="descriptioncard-custom">Por la simplicidad en el diseño, This Night es muy fácil de usar, permite realizar transacciones de manera sencilla, rápida y segura.</p>
                         </div>
                         </div>
                     </div>
@@ -121,8 +148,8 @@
                         <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="card-custom-body">
                             <div class="icon-custom"><i class='bx bx-smile'></i></div>
-                            <h4 class="titlecard-custom">Backend web</h4>
-                            <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
+                            <h4 class="titlecard-custom">Costos Fijos</h4>
+                            <p class="descriptioncard-custom">Brindamos servicios de implementación y soporte de Software, cobrando por servicio o porcentaje de transacción según las características del cliente.</p>
                         </div>
                         </div>
                     </div>
@@ -130,8 +157,8 @@
                       <div class="card-custom  aos-init aos-animate" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                       <div class="card-custom-body">
                           <div class="icon-custom"><i class='bx bx-smile'></i></div>
-                          <h4 class="titlecard-custom">Backend web</h4>
-                          <p class="descriptioncard-custom">Cash Less cuenta con una web para administrar el evento, gestionar puestos de carga, venta y consulta, visualización de transacciones on y off-line, dashboard de estadísticas de consumos y más</p>
+                          <h4 class="titlecard-custom">Marketing y publicidad.</h4>
+                          <p class="descriptioncard-custom">Te ofrecemos una presencia digital impactante que te permitirá conectarte con la gente en un nivel profundo, insertándote en su subconsciente mientras disfrutan de la noche.</p>
                       </div>
                       </div>
                   </div>
@@ -321,6 +348,66 @@
             </div>
           </section>
                    
+
+          <section id="contacto" class="contact">
+		<div class="container">
+	            <div class="container-custom position-relative quees mb-5" data-aos="fade-up" data-aos-duration="1000">
+                  <h2 class="title-custom titlequees h2-main">Contacto</h2>
+              </div>
+        	<div class="row">
+          		<div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-about text-white">
+              <h3 class="contact">ThisNight</h3>
+              <p>No somos sólo una empresa de acreditaciones. Somos una empresa de tecnología con experiencia en acreditaciones</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="info text-white">
+              <div>
+                <i class="ri-map-pin-line"></i>
+                <p>San Carlos Centro<br></p>
+              </div>
+              <div>
+                <i class="ri-mail-send-line"></i>
+                <p>agusbetin@elloco.com</p>
+              </div>
+              <div>
+                <i class="ri-phone-line"></i>
+                <p>+54 33333333</p>
+              </div>
+               <div>
+                <a href="" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                   <p>thisnight.official</p>
+              </div>
+            </div>
+          </div>
+	          	<div class="col-lg-5 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <form id="formContacto" method="post" role="form" class="php-email-form bg-transparent">
+                        <div class="form-group mb-3">
+                          <input type="text" name="name" class="form-control bg-transparent text-white outline-0" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres">
+                          <div class="validate"></div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <input type="email" class="form-control bg-transparent text-white outline-0" name="email" id="email" placeholder="Mail" data-rule="email" data-msg="Ingrese un mail válido">
+                          <div class="validate"></div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <input type="text" class="form-control bg-transparent text-white outline-0" name="subject" id="subject" placeholder="Motivo" data-rule="minlen:4" data-msg="Ingrese al menos 8 caracteres">
+                          <div class="validate"></div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <textarea class="form-control bg-transparent text-white outline-0" name="message" rows="5" data-rule="required" data-msg="Ingrese un detalle" placeholder="Mensaje"></textarea>
+                          <div class="validate"></div>
+                        </div>
+                        <div class="text-center mb-5">
+                          <button type="submit" class="btn btn-primary text-white">Enviar mensaje</button>
+                        </div>
+                  </form>
+              </div>
+
+			</div>
+		</div>
+    </section>
     </main>
     
     

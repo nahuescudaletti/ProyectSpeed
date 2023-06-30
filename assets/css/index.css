@@ -6,6 +6,7 @@ body{
   font-weight: 400;
   line-height: 1.5;
   height: 100vh;
+  font-family: "Lato", sans-serif;
 }
 
 /* NAVBAR */
@@ -256,4 +257,28 @@ ul.list-unstyled li i {
 .img-thumbnail {
   border-color: #1FE8B8 !important; /* Cambia el color del borde aquí */
 }
+
+/* form */
+  .form-control::-webkit-input-placeholder { /* WebKit/Blink browsers */
+    color: #ffffff;
+  }
+  .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+  }
+  .form-control:-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+  }
+  .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+  }
+  i {
+  color: #1FE8B8;
+  }
+  .contact{
+  color: #1FE8B8;
+    font-family: "Poppins", sans-serif;
+
+  }
+
+
 
