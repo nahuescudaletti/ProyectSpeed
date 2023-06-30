@@ -21,6 +21,11 @@ body{
 /* SECTION CARD */
 section {
   padding-top: 100px;
+   padding-bottom: 100PX;
+}
+.pen {
+  background-image: url(../img/fondofooter.jpg);
+  background-size: 100% 100%;
 }
 
 .cardtn {
@@ -281,4 +286,66 @@ ul.list-unstyled li i {
   }
 
 
+/* speed beneficios  */
 
+.beneficiosspeed{
+  background-color: black;
+}
+
+.beneficiosspeed .count-box i {
+            color: red; /* Cambia el color a rojo u otro color de tu elección */
+          }
+.JJJ{
+  padding-bottom: 100PX;
+}
+ .speed1{
+  width: 100%;
+ }
+
+.speed2{
+            max-width: 25%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+            display: block; /* Hace que la imagen sea un elemento de bloque */
+            margin: 0 auto; /* Centra horizontalmente la imagen */
+        }
+.dondeelestilo{
+  font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.titlequeess {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px; /* Ajusta el espacio entre el título y los pseudo-elementos */
+}
+
+.titlequeess::before,
+.titlequeess::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2.5px;
+  background-color: red;
+}
+
+.titlequeess::before {
+  left: -40px;
+}
+
+.titlequeess::after {
+  right: -40px;
+}
+.dondeelestilo1{
+  font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.img-bigger {
+  width: 8vh; /* Ajusta el ancho deseado de la imagen */
+  height: auto; /* Mantenemos la proporción original de la imagen */
+}
