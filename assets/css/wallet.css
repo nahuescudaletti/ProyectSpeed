@@ -1,54 +1,120 @@
 body {
-  background-color: #5721b537;
+  background-color: #361f75;
 }
 
-main {
-  margin-top: 200px;
+hr {
+  margin: 0.5rem 0;
+  border: none;
+  height: 2px;
+  background-color: #361f75; /* Cambia #361f75 por el color que desees */
+  box-shadow: 0 0 5px rgba(54, 31, 117, 0.5); /* Cambia los valores según tus preferencias */
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.background-container {
+  height: 75vh;
+  width: auto;
+  padding: 10px;
+  z-index: 1;
 }
 
 .card {
   position: absolute;
   transition: transform 0.3s ease;
-  border: none;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .card:first-child {
   transform-origin: center bottom;
-  transform: translateY(-35%) scale(0.6);
+  transform: translateY(25%);
   z-index: 1;
 }
 
 .card:nth-child(2) {
   transform-origin: center bottom;
-  transform: translateY(-15%) scale(0.6);
+  transform: translateY(45%);
   z-index: 2;
 }
 
 .card:last-child {
   transform-origin: center bottom;
-  transform: translateY(5%) scale(0.6);
+  transform: translateY(65%);
   z-index: 3;
 }
 
-.card.active {
-  transform: translateY(-85%) scale(0.6);
-  z-index: 4;
+.hidden {
+  display: none;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
+.card-info {
+  bottom: -28vh;
+  position: relative;
+  background-color: rgba(25, 26, 25, 0.8);
+  border-radius: 5px;
+  margin-top: -10px;
+  padding: 10px;
+  z-index: 2;
+  overflow-y: auto;
+  height: 48vh;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card-info.hidden.fade-in {
+  animation: fade-in 300ms ease-out forwards;
+}
+
+
+.small-image {
+  width: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+.small-image-speed {
+  width: auto; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+.mobile-border {
+  position: relative;
+  width: 48vh;
+  border: 16px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.btn-primary {
+  background-color: rgb(45, 43, 45);
+  border-color: #361f75;
+  box-sizing: border-box;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.btn-primary span {
+  font-size: 12px; /* Ajusta el tamaño de fuente según tus necesidades */
+}
+
+.btn-primary:hover {
+  border: solid #361f75;
+  background-color: #361f75;
+}
+
+.row-nav {
+  background-color: rgb(25, 26, 25);
+  position: relative;
+  z-index: 3;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #808080; /* Color gris */
 }

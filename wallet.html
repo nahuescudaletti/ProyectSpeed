@@ -5,36 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/wallet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
 <body>
 <main>
-<div class="container-fluid h-100">
-  <div class="row h-100">
-    <div class="col-md-6 d-flex justify-content-center align-items-center">
-      <div class="cards d-flex flex-column align-items-center">
-        <div class="card">
-          <img class="img-fluid" src="./assets/img/Opción-1-frente.png" alt="">
+  <!-- <div class="container d-flex justify-content-center align-items-center">
+    <div class="wallet d-flex flex-column align-items-center">
+      <div class="card objeto-caida hidden">
+        <img class="img-fluid" src="./assets/img/Opción-1-frente.png" alt="">
+      </div>
+      <div class="card objeto-caida active">
+        <img class="img-fluid" src="./assets/img/Opción-2-frente.png" alt="">
+      </div>
+      <div class="card objeto-caida hidden">
+        <img class="img-fluid" src="./assets/img/Opción-3-frente.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="card-info" id="overlay">
+
+  </div> -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 mobile-border px-0">
+        <div class="row m-0 py-2 bg-black bg-opacity-50">
+          <div class="d-flex ps-0">
+            <div class="row d-flex mx-0">
+              <div class="col-auto ps-2">
+                <button class="btn btn-primary d-flex align-items-center p-0 pe-2"> <img class="img-fluid small-image" src="./assets/img/agusemoji.png" alt=""> <span>Agustín</span></button>
+              </div>
+              <div class="col-auto ps-2">
+                <i class="btn btn-primary d-flex align-items-center p-0 pe-2"> <img class="img-fluid small-image-speed" src="./assets/img/rayospeed.png" alt=""> <span> 777</span></i>
+              </div>
+            </div>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+          </div>
         </div>
-        <div class="card">
-          <img class="img-fluid" src="./assets/img/Opción-2-frente.png" alt="">
+        <div class="background-container bg-black pt-0 px-2 bg-opacity-50">
+          <div class="row mx-1" style="position: relative;">
+            <div class="col-md-12 card px-0">
+              <img class="img-fluid" src="./assets/img/Opción-1-frente.png" alt="">
+            </div>
+            <div class="col-md-12 card px-0">
+              <img class="img-fluid" src="./assets/img/Opción-2-frente.png" alt="">
+            </div>
+            <div class="col-md-12 card px-0">
+              <img class="img-fluid" src="./assets/img/Opción-3-frente.png" alt="">
+            </div>
+            <div class="col-md-12 pt-0 card-info hidden">
+              <span class="small-text">Últimos movimientos</span>
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-white small-text small my-0">Renglón superior</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex">
+                    <p class="text-white description flex-grow-1 my-0 small">Descripción</p>
+                    <p class="text-white amount small my-0">Monto</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-white small-text small my-0">Renglón superior</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex">
+                    <p class="text-white description flex-grow-1 my-0 small">Descripción</p>
+                    <p class="text-white amount small my-0">Monto</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-white small-text small my-0">Renglón superior</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex">
+                    <p class="text-white description flex-grow-1 my-0 small">Descripción</p>
+                    <p class="text-white amount small my-0">Monto</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-white small-text small my-0">Renglón superior</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex">
+                    <p class="text-white description flex-grow-1 my-0 small">Descripción</p>
+                    <p class="text-white amount small my-0">Monto</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-white small-text small my-0">Renglón superior</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex">
+                    <p class="text-white description flex-grow-1 my-0 small">Descripción</p>
+                    <p class="text-white amount small my-0">Monto</p>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
         </div>
+        <div class="row row-nav mx-0 py-2">
+          <div class="d-flex">
+            <div class="row">
+              <div class="col-auto">
+                <button class="btn btn-primary d-flex align-items-center p-0 pe-2"> <img class="img-fluid small-image" src="./assets/img/agusemoji.png" alt=""> <span>Agustín</span></button>
+              </div>
+            </div>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-8">
         <div class="card">
-          <img class="img-fluid" src="./assets/img/Opción-3-frente.png" alt="">
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusantium dicta magnam minus debitis harum ut obcaecati porro rerum voluptatem maxime aspernatur rem magni maiores? Voluptatem id velit accusamus alias.
+          Optio necessitatibus consequuntur tenetur, exercitationem fuga nisi unde tempore ratione minus, illo incidunt, aut cumque delectus. Voluptatum sequi laudantium alias facere tempora laborum ullam, hic deserunt dicta aperiam, dignissimos sunt!
+          Fugit doloribus ipsa sapiente voluptate iusto aperiam deserunt veritatis, dolorem laudantium expedita quis earum labore quae amet explicabo? Vel fuga cumque et. Qui soluta nihil totam rerum fuga dolores impedit.
+          Incidunt, nobis officia eaque, veritatis debitis consectetur id unde porro sequi voluptate accusantium! Alias nobis laboriosam dolore et exercitationem, nihil fugit, natus omnis animi inventore voluptates est illo dignissimos eveniet.
+          Corrupti officiis enim reiciendis nemo explicabo aut, itaque iste. Illo, odit autem! Nemo sed voluptatibus id fugit! Quia sint saepe molestiae, ab nam error tenetur, repellat dolores corporis expedita provident?
+          Quod fugit ullam fugiat autem ratione adipisci eum! Consectetur quisquam debitis asperiores, obcaecati similique, perspiciatis illum saepe aspernatur dicta expedita inventore eaque fuga, autem neque totam! Nulla tenetur provident fugit!
+          Deleniti officiis aliquid aspernatur facilis consequuntur perspiciatis blanditiis. Quasi voluptatibus odit quia maxime optio sequi, dolores aperiam hic voluptatem ab excepturi commodi eaque labore deleniti quas ipsam a enim sapiente.
+          Porro labore facilis omnis odio dolorum quidem ullam quaerat eligendi laborum, fugiat accusantium reiciendis optio, commodi illum mollitia hic asperiores sapiente aut adipisci! Voluptates quas, vero corporis accusamus ea voluptatibus.
+          Rerum, vel. Perspiciatis quia quod impedit hic totam magnam eveniet dolorem quam officiis voluptatem iusto, facilis, aliquam quibusdam incidunt atque ut labore minima. Nisi maxime commodi, doloribus quas ipsa repellat.
+          Quidem fuga quasi aliquam magnam debitis. Ab ducimus tempora sed voluptas? Quasi dicta perspiciatis voluptatem. Ut eveniet cumque neque odit a aliquid, omnis, laudantium harum sed debitis illo molestias animi!
+          Laborum, assumenda totam cum consequuntur velit ea, molestias ab, dolor earum possimus vel dolorem laudantium voluptas! Animi voluptates voluptatum ipsum corrupti sint tempore, quidem repudiandae est autem quis? Inventore, error?
+          Temporibus deserunt, quas porro, sequi harum quia, maiores soluta nam a iste non in. Ullam nihil sed dolores delectus id dicta fugit aspernatur architecto! Autem ratione nisi optio ad dignissimos?
+          Porro non maiores, autem facilis fugit sed quas inventore quod similique dolor corporis totam? Molestias, unde laborum laudantium minima ducimus iste fugit. Nam perferendis neque provident laborum, reiciendis ad harum?
+          Eum, in asperiores quasi molestias nostrum iure quo. Natus distinctio tempore sapiente placeat eos repellendus. Sequi, debitis! Deleniti veritatis in modi, debitis sapiente quas, eos neque corrupti, eveniet accusantium eius.
+          Quibusdam, voluptates saepe placeat, magni nulla, labore ad non ab facilis obcaecati asperiores suscipit excepturi cum quasi unde accusamus iste? Vero voluptas tempore architecto maxime eos aspernatur praesentium consequatur totam!
+          Natus libero ut minima esse, a blanditiis impedit eum deleniti magnam id repellendus tempora illo earum laudantium ea, officia nobis, voluptatibus soluta excepturi dolorum laborum. Et quam tempore fugit? Optio!
+          Aut eveniet laboriosam sit, eos optio provident a nulla reprehenderit dolore voluptatum laudantium cumque qui nobis? Ab, itaque deleniti ea excepturi quam impedit repellat asperiores voluptatum temporibus reiciendis? Voluptates, autem!
+          Maxime, voluptatum. Placeat nemo nostrum culpa officia distinctio quis? Dolore soluta voluptatum impedit perferendis. Dolores similique nostrum architecto beatae commodi cum ipsam culpa, deleniti deserunt. Delectus nemo commodi reiciendis perspiciatis?
+          Tempore quaerat odit ipsa, dolor ducimus ab maiores modi facere sint nisi, laborum dicta nobis sapiente rem, earum fugit atque! Nobis laborum labore at eos ex illum, tenetur inventore magni.
+          Ducimus voluptatem enim molestiae aliquam animi at, qui asperiores aspernatur, sunt vitae ex cupiditate, corporis itaque fugit distinctio libero illum maxime labore nulla a nobis est ratione reiciendis deserunt. Quaerat?
+          Consequatur iste perspiciatis fugiat dolorem tempore tempora dolor delectus repudiandae, nihil cupiditate neque ut ad sunt incidunt animi, rerum hic ipsum iusto magnam accusantium, culpa facere. Eligendi ad saepe minima.
+          Magni autem, aspernatur, consectetur ducimus itaque, quisquam cumque corporis temporibus voluptate distinctio incidunt voluptas? Quam incidunt labore dolores repellat possimus asperiores impedit provident magnam deserunt? Quam alias accusamus ipsa suscipit.
+          Voluptate nam, ratione rerum fugit quas aperiam dolorum debitis impedit tenetur quis amet quos corporis soluta in natus quibusdam distinctio, mollitia eius ab, qui enim ad quia sapiente? Atque, perspiciatis!
+          Perferendis perspiciatis, sequi ut dolor, distinctio quae eum repudiandae voluptas itaque natus officiis ad corrupti dicta odit! Necessitatibus corporis numquam, saepe omnis maxime atque sit architecto facere aut. Eius, quod?
+          Alias ullam dolor laboriosam sunt praesentium asperiores, at ad qui est. Delectus sit quibusdam animi dignissimos! Omnis, voluptates alias quis eius eveniet cupiditate laudantium explicabo consectetur magnam sunt nihil iste!</h5>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>
-    </div>
   </div>
-</div>
 </main>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
