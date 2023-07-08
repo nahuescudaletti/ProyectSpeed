@@ -23,10 +23,8 @@ section {
   padding-top: 100px;
    padding-bottom: 100PX;
 }
-.pen {
-  background-image: url(../img/fondofooter.jpg);
-  background-size: 100% 100%;
-}
+
+
 .gradient-border {
   position: relative;
 }
@@ -280,9 +278,19 @@ ul.list-unstyled li i {
 
 /* FOTOS */
 
-.img-thumbnail {
-  border-color: #1FE8B8 !important; /* Cambia el color del borde aquí */
+.grid-item{
+  width: 300px;
+  margin-bottom: 30px;
+  border-radius: 10px;  
+  background-color: lightgray;
 }
+.grid-item:hover{
+filter: opacity(0.8);
+}
+.grid-container{
+  margin: 0 auto;
+}
+
 
 /* form */
   .form-control::-webkit-input-placeholder { /* WebKit/Blink browsers */
