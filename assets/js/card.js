@@ -17,3 +17,4 @@ function stopRotate(){
     const cardItem = this.querySelector('.card-itemtn');
     cardItem.style.transform = `rotateX(0) rotateY(0)`;
 }
+

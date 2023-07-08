@@ -1,0 +1,58 @@
+body {
+  background: #361F75;
+}
+
+.card {
+  max-width: 400px;
+  background: #fff 0.5;
+  box-shadow: 0 0px 30px 10px #1fd1e86b;
+  border-radius: 10px;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -75px auto 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #361F75 10px;
+    box-shadow: 0 0px 10px 2px #1fd1e86b;
+  
+}
+
+.circle-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+.flag-icon {
+width: 20px;
+height: 20px;
+margin-right: 5px;
+}
+.form-label{
+  font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 1.1rem
+}
+.nosequeclassponer{
+  font-family: 'Nunito', sans-serif;
+font-weight: 300;
+font-size: 1rem;
+}

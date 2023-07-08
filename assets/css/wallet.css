@@ -44,7 +44,7 @@ main {
 }
 
 .card.active {
-  transform: translateY(-85%) scale(0.6);
+  transform: translateY(-50%) scale(0.6);
   z-index: 4;
 }
 
