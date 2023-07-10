@@ -279,7 +279,7 @@ ul.list-unstyled li i {
 /* FOTOS */
 
 .grid-item{
-  width: 300px;
+  width: 248px;
   margin-bottom: 30px;
   border-radius: 10px;  
   background-color: lightgray;
@@ -386,6 +386,15 @@ filter: opacity(0.8);
   height: 100%;
   z-index: 1; 
 }
+
+@media (max-width: 768px) {
+  .manoderecha {
+    display: none; /* Oculta el elemento */
+  }
+}
+
+/* Resto de estilos... */
+
 .speedbutton {
   padding: 0;
   background: black;
