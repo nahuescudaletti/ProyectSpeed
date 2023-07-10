@@ -111,7 +111,7 @@ hr {
 
 .btn-primary {
   background-color: rgb(45, 43, 45);
-  border-color: #361f75;
+  border-color: #1E1142;
   box-sizing: border-box;
   transition: border-color 0.3s, background-color 0.3s;
 }
@@ -121,8 +121,8 @@ hr {
 }
 
 .btn-primary:hover {
-  border: solid #361f75;
-  background-color: #361f75;
+  border: solid #1E1142;
+  background-color: #1E1142;
 }
 
 .row-nav {
@@ -142,9 +142,9 @@ hr {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 5px;
-  border: solid #361f75;
+  border: solid #1E1142;
 }
 
 .custom-icons span {
