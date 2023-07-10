@@ -387,7 +387,7 @@ filter: opacity(0.8);
   z-index: 1; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .manoderecha {
     display: none; /* Oculta el elemento */
   }
