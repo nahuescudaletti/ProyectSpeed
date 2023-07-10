@@ -56,7 +56,25 @@ hr {
   padding: 10px;
   z-index: 2;
   overflow-y: auto;
+  overflow-x:hidden;
   height: 48vh;
+}
+
+.card-info::-webkit-scrollbar {
+  width: 0.1rem; /* Ajusta el ancho del scroll según tus necesidades */
+}
+
+.card-info::-webkit-scrollbar-track {
+  background-color: transparent; /* Cambia el color de fondo del track según tus preferencias */
+}
+
+.card-info::-webkit-scrollbar-thumb {
+  background-color: #888; /* Cambia el color del thumb según tus preferencias */
+  border-radius: 10px; /* Ajusta el radio del borde del thumb según tus necesidades */
+}
+
+.card-info::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cambia el color del thumb al pasar el cursor sobre él */
 }
 
 @keyframes fade-in {
@@ -76,7 +94,7 @@ hr {
 
 .small-image-speed {
   width: auto; /* Ajusta el tamaño de la imagen según tus necesidades */
-  height: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 18px; /* Ajusta el tamaño de la imagen según tus necesidades */
 }
 
 .mobile-border {
@@ -118,3 +136,29 @@ hr {
   font-size: 12px;
   color: #808080; /* Color gris */
 }
+
+.custom-icons {
+  background-color: rgb(45, 43, 45);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: solid #361f75;
+}
+
+.custom-icons span {
+  color: white;
+  font-size: 12px;
+}
+
+.custom-icons > div {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Ajusta el margen derecho según tu preferencia */
+}
+
+.custom-icons > div:last-child {
+  margin-right: 0;
+}
+
