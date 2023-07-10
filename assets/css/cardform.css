@@ -1,5 +1,6 @@
 body {
-  background: #130826;
+
+  background-color: #130226;
 }
 
 .card {
@@ -20,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   border: solid #361F75 10px;
-    box-shadow: 0 0px 10px 2px #1fd1e86b;
+  box-shadow: 0 0px 10px 2px #1fd1e86b;
   
 }
 
@@ -42,19 +43,19 @@ body {
   width: 100%;
 }
 .flag-icon {
-width: 20px;
-height: 20px;
-margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 .form-label{
   font-family: 'Nunito', sans-serif;
-font-weight: 700;
-font-size: 1.1rem
+  font-weight: 700;
+  font-size: 1.1rem
 }
 .nosequeclassponer{
   font-family: 'Nunito', sans-serif;
-font-weight: 300;
-font-size: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
 }
 .container{
   margin-top:34px;

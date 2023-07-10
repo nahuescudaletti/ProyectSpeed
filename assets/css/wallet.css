@@ -1,4 +1,4 @@
- body {
+body {
   background-color: #130226;
 }
 
@@ -111,7 +111,8 @@ hr {
 
 .btn-primary {
   background-color: rgb(45, 43, 45);
-  border-color: #1E1142;
+  border-color: rgb(161, 255, 20);
+  border-radius: 11px;
   box-sizing: border-box;
   transition: border-color 0.3s, background-color 0.3s;
 }
@@ -122,7 +123,7 @@ hr {
 
 .btn-primary:hover {
   border: solid #1E1142;
-  background-color: #1E1142;
+  background-color: rgb(161, 255, 20);
 }
 
 .row-nav {
@@ -137,14 +138,23 @@ hr {
   color: #808080; /* Color gris */
 }
 
+object {
+  height: 100%;
+  width: 100%;
+}
+
+.w-object {
+  height: 180vh;
+}
+
 .custom-icons {
   background-color: rgb(45, 43, 45);
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  border-radius: 5px;
-  border: solid #1E1142;
+  border-radius: 11px;
+  border: 1px  solid  rgb(161, 255, 20);
 }
 
 .custom-icons span {

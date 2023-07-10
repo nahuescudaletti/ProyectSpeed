@@ -422,3 +422,12 @@ filter: opacity(0.8);
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+  .speed2img{
+    width: 100%; /* Ajusta el tamaño de la imagen para tablet */
+  }
+@media (max-width: 768px) { /* Ajusta el valor del ancho máximo según tus necesidades */
+  .speed2img{
+    width: 150%; /* Ajusta el tamaño de la imagen para tablet */
+  }
+}
