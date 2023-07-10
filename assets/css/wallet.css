@@ -1,6 +1,6 @@
  body {
-      background-color: #eea6ed;
-       }
+  background-color: #130226;
+}
 
 hr {
   margin: 0.5rem 0;
@@ -11,6 +11,7 @@ hr {
 }
 
 .background-container {
+  background-color: #1E1142;
   height: 75vh;
   width: auto;
   padding: 10px;
@@ -51,7 +52,7 @@ hr {
   bottom: -28vh;
   position: relative;
   background-color: rgba(25, 26, 25, 0.8);
-  border-radius: 5px;
+  border-radius: 11px;
   margin-top: -10px;
   padding: 10px;
   z-index: 2;
@@ -88,52 +89,51 @@ hr {
 
 
 .small-image {
-  width: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
-  height: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: auto; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 34px; /* Ajusta el tamaño de la imagen según tus necesidades */
 }
 
 .small-image-speed {
   width: auto; /* Ajusta el tamaño de la imagen según tus necesidades */
-  height: 18px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
 }
 
 .mobile-border {
   position: relative;
   width: 48vh;
-  border: 16px solid #000;
+  height: 92.5vh;
+  border: 11px solid #d3d3d3;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #808080, #6c6c6c);
+  z-index: 4;
 }
 
 .btn-primary {
   background-color: rgb(45, 43, 45);
-  border-color: #361f75;
+  border-color: #1E1142;
   box-sizing: border-box;
   transition: border-color 0.3s, background-color 0.3s;
 }
 
 .btn-primary span {
-  font-size: 12px; /* Ajusta el tamaño de fuente según tus necesidades */
+  font-size: 15px; /* Ajusta el tamaño de fuente según tus necesidades */
 }
 
 .btn-primary:hover {
-  border: solid #361f75;
-  background-color: #361f75;
+  border: solid #1E1142;
+  background-color: #1E1142;
 }
 
 .row-nav {
+  height: 60px;
   background-color: rgb(25, 26, 25);
   position: relative;
   z-index: 3;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 15px;
   color: #808080; /* Color gris */
 }
 
@@ -142,14 +142,14 @@ hr {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 5px;
-  border: solid #361f75;
+  border: solid #1E1142;
 }
 
 .custom-icons span {
   color: white;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .custom-icons > div {
@@ -160,5 +160,56 @@ hr {
 
 .custom-icons > div:last-child {
   margin-right: 0;
+}
+
+.col-data {
+  border-radius: 5px;
+  border: solid #361f75;
+  border-width: 1px;
+  box-shadow: 0 0 5px rgba(54, 31, 117, 0.7);
+}
+
+.button {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 10px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: none;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
 }
 
