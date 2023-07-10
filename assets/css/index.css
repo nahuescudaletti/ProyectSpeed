@@ -379,3 +379,10 @@ filter: opacity(0.8);
   height: auto; /* Mantenemos la proporción original de la imagen */
 }
 
+.manoderecha {
+  position: absolute;
+  top: 0;
+  left: 170px; 
+  height: 100%;
+  z-index: 1; 
+}
