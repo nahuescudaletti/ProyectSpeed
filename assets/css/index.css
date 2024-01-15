@@ -564,8 +564,8 @@ filter: opacity(0.8);
   z-index: 0;
   background: transparent;
   overflow: hidden;
-  border: 2px solid #a114a1;
-  color: #a114a1;
+  border: 2px solid #7623E2;
+  color: #7623E2;
 }
 .css-button-sliding-to-top--rose:hover {
   color: #fff;
@@ -582,7 +582,7 @@ filter: opacity(0.8);
   bottom: 0;
   height: 0;
   width: 100%;
-  background: #ee05ee;
+  background: #7623E2;
 }
  .flecha-container {
         position: relative;
@@ -590,7 +590,7 @@ filter: opacity(0.8);
     }
 
     .fa-angles-right {
-        color: #ff00ff; /* Color violeta */
+        color: #C226DD; /* Color violeta */
         font-size: 2rem;
         text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Sombras de neón */
         animation: neonGlow 0.8s infinite alternate; /* Animación de neón */
@@ -610,6 +610,28 @@ filter: opacity(0.8);
     font-family: 'Tusker Grotesk2', sans-serif;
 }
 
+@media screen and (max-width: 700px) {
+    .mensaje-personalizado {
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+        font-family: 'Tusker Grotesk', sans-serif;
+        text-align: center;
+        margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+    }
+    .thisnightaaa {
+        color: #C226DD;
+        font-weight: bold;
+        font-size: 4rem;
+        font-family: 'Tusker Grotesk2', sans-serif;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    }
+    .TarjetaPersonalizada {
+        height: 185px; /* Ajusta el 100% de la altura de la ventana gráfica */
+        width: 325px;
+    }
+}
+
 @media screen and (max-width: 470px) {
     .mensaje-personalizado {
         font-size: 2rem;
@@ -619,29 +641,17 @@ filter: opacity(0.8);
         text-align: center;
         margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
     }
-    .thisnightaaa{
-        color: #ff00ff; 
-        font-weight: bold; 
-        font-size: 3rem; 
+    .thisnightaaa {
+        color: #C226DD;
+        font-weight: bold;
+        font-size: 3rem;
         font-family: 'Tusker Grotesk2', sans-serif;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     }
     .TarjetaPersonalizada {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         height: 185px; /* Ajusta el 100% de la altura de la ventana gráfica */
         width: 325px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        border-radius: 15px; /* Ajusta el radio de las esquinas según tus necesidades */
-        overflow: hidden; /* Asegura que la imagen de fondo no sobresalga de los bordes redondeados */
-        margin: auto; /* Centra la tarjeta en el medio */
-        margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
-        position: relative;
     }
 }
+
 
