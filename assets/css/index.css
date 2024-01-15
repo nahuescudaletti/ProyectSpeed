@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
   background-color: #130826;
   background-size: 100%;
@@ -11,13 +16,6 @@ body{
 
 /* NAVBAR */
 
-.nav-item {
-  font-family: "Lato", sans-serif;
-  font-size: large;
-}
-
-
-
 /* SECTION CARD */
 section {
   padding-top: 100px;
@@ -28,24 +26,6 @@ section {
 .gradient-border {
   position: relative;
 }
-
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50vh; /* Ajusta la altura del degradado según lo desees */
-  background-image: linear-gradient(
-    to bottom,
-     rgba(31, 232, 184, 0.3),
-    rgba(31, 232, 184, 0.2),
-    rgba(31, 232, 184, 0.1),
-    rgba(31, 232, 184, 0)
-  );  z-index: -1;
-  
-}
-
 
 .cardtn {
   perspective: 1000px;
@@ -440,3 +420,228 @@ filter: opacity(0.8);
     width: 150%; /* Ajusta el tamaño de la imagen para tablet */
   }
 }
+/* Styles for the custom navigation link with the class .sombreado */
+.sombreado {
+    position: relative;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 6.2184375vw;
+    padding: 8px 50px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    background-color: #1FD0E8;
+    margin-bottom: 15px;
+}
+
+.sombreado:hover {
+    background-color: #87CEEB;
+}
+
+/* Adjust the z-index of the shadow to make sure it's below the button */
+.sombreado::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    bottom: -10px;
+    left: 10px;
+    border-radius: 6.2184375vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.sombreado:hover::after {
+    opacity: 1;
+}
+
+.modulos-group {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 6.2184375vw;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    background-color: #1FD0E8;
+}
+
+.modulos-group .nav-link {
+    margin-right: 10px;
+}
+
+.modulos-group:hover {
+    background-color: #87CEEB;
+}
+
+/* Adjust the z-index of the shadow to make sure it's below the button */
+.modulos-group::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    bottom: -10px;
+    left: 10px;
+    border-radius: 6.2184375vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.modulos-group:hover::after {
+    opacity: 1;
+}
+.TarjetaPersonalizada {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px; /* Ajusta el 100% de la altura de la ventana gráfica */
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 15px; /* Ajusta el radio de las esquinas según tus necesidades */
+    overflow: hidden; /* Asegura que la imagen de fondo no sobresalga de los bordes redondeados */
+    margin: auto; /* Centra la tarjeta en el medio */
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+    position: relative;
+}
+
+.TarjetaPersonalizada img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.superposicion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px; /* Ajusta el radio de las esquinas según tus necesidades */
+}
+
+.contenedorBotones {
+    margin-top: 20px;
+}
+@font-face {
+    font-family: 'Tusker Grotesk'; /* Nombre de la fuente que usarás en tu CSS */
+    src: url('/assets/fonts/tusker-grotesk-font/TuskerGrotesk-2600Semibold.otf') format('woff2'),
+         url('/assets/fonts/tusker-grotesk-font/TuskerGrotesk-2600Semibold.ttf') format('woff');
+    font-display: swap; /* Estrategia de visualización para mejorar la renderización en algunos casos */
+}
+@font-face {
+    font-family: 'Tusker Grotesk2'; /* Nombre de la fuente que usarás en tu CSS */
+    src: url('/assets/fonts/tusker-grotesk-font/TuskerGrotesk-4700Bold.otf') format('woff2'),
+         url('/assets/fonts/tusker-grotesk-font/TuskerGrotesk-4700Bold.ttf') format('woff');
+    font-display: swap; /* Estrategia de visualización para mejorar la renderización en algunos casos */
+}
+.mensaje-personalizado {
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Tusker Grotesk', sans-serif;
+    text-align: center;
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.css-button-sliding-to-top--rose {
+  min-width: 130px;
+  height: 40px;
+  color: #000000;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: transparent;
+  overflow: hidden;
+  border: 2px solid #a114a1;
+  color: #a114a1;
+}
+.css-button-sliding-to-top--rose:hover {
+  color: #fff;
+}
+.css-button-sliding-to-top--rose:hover:after {
+  height: 100%;
+}
+.css-button-sliding-to-top--rose:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: #ee05ee;
+}
+ .flecha-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .fa-angles-right {
+        color: #ff00ff; /* Color violeta */
+        font-size: 2rem;
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Sombras de neón */
+        animation: neonGlow 0.8s infinite alternate; /* Animación de neón */
+    }
+
+    @keyframes neonGlow {
+        to {
+            text-shadow: none;
+        }
+    }
+
+/* Estilos generales aquí */
+.thisnightaaa{
+    color: #ff00ff; 
+    font-weight: bold; 
+    font-size: 5rem; 
+    font-family: 'Tusker Grotesk2', sans-serif;
+}
+
+@media screen and (max-width: 470px) {
+    .mensaje-personalizado {
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+        font-family: 'Tusker Grotesk', sans-serif;
+        text-align: center;
+        margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+    }
+    .thisnightaaa{
+        color: #ff00ff; 
+        font-weight: bold; 
+        font-size: 4rem; 
+        font-family: 'Tusker Grotesk2', sans-serif;
+    }
+    .TarjetaPersonalizada {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 185px; /* Ajusta el 100% de la altura de la ventana gráfica */
+        width: 325px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        border-radius: 15px; /* Ajusta el radio de las esquinas según tus necesidades */
+        overflow: hidden; /* Asegura que la imagen de fondo no sobresalga de los bordes redondeados */
+        margin: auto; /* Centra la tarjeta en el medio */
+        margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+        position: relative;
+    }
+}
+
