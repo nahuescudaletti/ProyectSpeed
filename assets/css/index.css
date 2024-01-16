@@ -712,7 +712,7 @@ filter: opacity(0.8);
 
 @media screen and (max-width: 470px) {
     .mensaje-personalizado {
-        font-size: 2rem;
+        font-size: 3rem;
         color: white;
         font-weight: bold;
         font-family: 'Tusker Grotesk', sans-serif;
@@ -723,7 +723,7 @@ filter: opacity(0.8);
     .thisnightaaa {
         color: #C226DD;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 4rem;
         font-family: 'Tusker Grotesk2', sans-serif;
         white-space: nowrap; /* Evita que el texto se divida en varias líneas */
         display: block; /* Hace que el elemento sea de bloque, ocupando toda la línea */
@@ -778,9 +778,16 @@ filter: opacity(0.8);
 .modulos-group a:hover {
     color: #e3e2e5 !important; /* Cambia el color al hacer hover */
 }
-.navbar {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/navback.png');
-  background-size: cover;
+.ware {
+  border: none;
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Para colocar el fondo detrás del contenido del navbar */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/navback.png');
+    background-size: cover;
 }
 
 
