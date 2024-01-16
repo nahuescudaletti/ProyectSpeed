@@ -531,14 +531,14 @@ filter: opacity(0.8);
 }
 @font-face {
     font-family: 'Tusker Grotesk'; /* Nombre de la fuente que usarás en tu CSS */
-    src: url('/fonts/tusker-grotesk-font/2600Semibold.otf') format('woff2'),
-         url('/fonts/tusker-grotesk-font/2600Semibold.ttf') format('woff');
+    src: url('./fonts/tusker-grotesk-font/2600Semibold.otf') format('woff2'),
+         url('./fonts/tusker-grotesk-font/2600Semibold.ttf') format('woff');
     font-display: swap; /* Estrategia de visualización para mejorar la renderización en algunos casos */
 }
 @font-face {
     font-family: 'Tusker Grotesk2'; /* Nombre de la fuente que usarás en tu CSS */
-    src: url('/fonts/tusker-grotesk-font/4700Bold.otf') format('woff2'),
-         url('/fonts/tusker-grotesk-font/4700Bold.ttf') format('woff');
+    src: url('./fonts/tusker-grotesk-font/4700Bold.otf') format('woff2'),
+         url('./fonts/tusker-grotesk-font/4700Bold.ttf') format('woff');
     font-display: swap; /* Estrategia de visualización para mejorar la renderización en algunos casos */
 }
 .mensaje-personalizado {
