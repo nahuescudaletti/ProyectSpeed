@@ -670,14 +670,13 @@ filter: opacity(0.8);
         width: 325px;
     }
     .watermark1 {
-        top: 50px; 
-        left: -139px; 
+        top: 1px; 
+        left: -65px; 
         position: absolute;
         opacity: 1;
-        width: 100px;
+        width: 17px;
         height: auto;
         z-index: 0;
-        transform: rotate(-90deg); 
     }
 
     .watermark2 {
@@ -685,7 +684,7 @@ filter: opacity(0.8);
         right: -56px; 
         position: absolute;
         opacity: 1;
-        width: 22px;
+        width: 20px;
         height: auto;
         z-index: 0;
     }
@@ -735,14 +734,13 @@ filter: opacity(0.8);
         width: 325px;
     }
     .watermark1 {
-        top: 40px; 
-        left: -137px; 
+        top: 1px; 
+        left: -65px; 
         position: absolute;
         opacity: 1;
-        width: 50px;
+        width: 17px;
         height: auto;
         z-index: 0;
-        transform: rotate(-90deg); 
     }
 
     .watermark2 {
