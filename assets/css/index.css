@@ -424,41 +424,6 @@ filter: opacity(0.8);
     width: 150%; /* Ajusta el tamaño de la imagen para tablet */
   }
 }
-/* Styles for the custom navigation link with the class .sombreado */
-.sombreado {
-    position: relative;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(255, 255, 255);
-    border-radius: 6.2184375vw;
-    padding: 8px 50px;
-    transition: box-shadow 0.3s, background-color 0.3s;
-    background-color: #9048ed;
-    margin-bottom: 15px;
-}
-
-.sombreado:hover {
-    background-color: #9048ed;
-}
-
-/* Adjust the z-index of the shadow to make sure it's below the button */
-.sombreado::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 25px;
-    background-color: #ffffff;
-    bottom: -10px;
-    left: 10px;
-    border-radius: 6.2184375vw;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: -1;
-}
-
-.sombreado:hover::after {
-    opacity: 1;
-}
 
 .modulos-group {
     display: flex;
@@ -469,6 +434,7 @@ filter: opacity(0.8);
     border-radius: 6.2184375vw;
     transition: box-shadow 0.3s, background-color 0.3s;
     background-color: rgba(144, 72, 237, 00.5)	;
+    padding: 1%;
 }
 
 .modulos-group .nav-link {
@@ -670,8 +636,47 @@ filter: opacity(0.8);
     .navbar .modulos-group .nav-item {
         margin-bottom: 10px; /* Espacio entre elementos */
     }
-    .sombreado{
-      width: 30%;
+
+    .modulos-group {
+        display: flex;
+        position: relative;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+        border-radius: 0.2184375vw;
+        transition: box-shadow 0.3s, background-color 0.3s;
+        background-color: rgba(144, 72, 237, 1)	;
+    }
+
+    .modulos-group .nav-link {
+        margin-right: 1px;
+    }
+
+    .modulos-group:hover {
+        background-color: #9048ed;
+    }
+
+    /* Adjust the z-index of the shadow to make sure it's below the button */
+    .modulos-group::after {
+        content: '';
+        position: absolute;    
+        display: none; /* O los estilos que desees aplicar en pantallas más pequeñas */
+        width: 100%;
+        height: 25px;
+        background-color: #ffffff;
+        bottom: -10px;
+        left: 10px;
+        border-radius: 1.2184375vw;
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: -1;
+    }
+
+    .modulos-group:hover::after {
+        opacity: 1;
+    }
+    #navbarNav{
+        background-color: rgba(144, 72, 237, 1);
     }
 }
 
@@ -743,9 +748,6 @@ filter: opacity(0.8);
         height: auto;
         border-radius: 50%; /* Para un icono redondo */
     }
- .sombreado{
-      width: 60%;
-    }
 }
 
 
@@ -807,10 +809,6 @@ filter: opacity(0.8);
         width: 50px;
         height: auto;
         border-radius: 50%; /* Para un icono redondo */
-    }
-     .sombreado{
-      width: 80%;
-
     }
 }
 
