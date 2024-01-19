@@ -660,6 +660,10 @@ filter: opacity(0.8);
     height: auto;
     border-radius: 50%; /* Para un icono redondo */
 }
+.navicons{
+        width: 100%;
+        height: 80px;
+    }
 @media (max-width: 991px) {
     .navbar .modulos-group {
         flex-direction: column; /* Cambia la dirección del flex container a columna */
@@ -675,6 +679,17 @@ filter: opacity(0.8);
     }
 }
 
+.ware {
+    border: none;
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Para colocar el fondo detrás del contenido del navbar */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg-rotateed/nav.png');
+    background-size: cover;
+}
 @media screen and (max-width: 700px) {
     .mensaje-personalizado {
         font-size: 3rem;
@@ -734,6 +749,21 @@ filter: opacity(0.8);
     }
  .sombreado{
       width: 60%;
+    }
+    .ware {
+        border: none;
+        height: 10%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100; /* Para colocar el fondo detrás del contenido del navbar */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg-rotateed/nav.png');
+        background-size: cover;
+    }
+    .navicons{
+        width: 100%;
+        height: 50px;
     }
 }
 
@@ -810,18 +840,6 @@ filter: opacity(0.8);
 .modulos-group a:hover {
     color: #e3e2e5 !important; /* Cambia el color al hacer hover */
 }
-.ware {
-  border: none;
-    height: 15%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100; /* Para colocar el fondo detrás del contenido del navbar */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg-rotateed/nav.png');
-    background-size: cover;
-}
-
 
 /* Agrega estas clases CSS en tu archivo de estilos */
 .tituloslink {
