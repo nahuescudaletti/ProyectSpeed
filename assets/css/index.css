@@ -15,9 +15,6 @@ body{
 }
 
 /* NAVBAR */
-#navbarNav{
-        background-color: rgba(144, 72, 237, 1);
-    }
 
 /* SECTION CARD */
 section {
@@ -629,9 +626,6 @@ filter: opacity(0.8);
     height: auto;
     border-radius: 50%; /* Para un icono redondo */
 }
-#navbarNav{
-        background-color: rgba(144, 72, 237, 1);
-    }
 @media (max-width: 991px) {
     .navbar .modulos-group {
         flex-direction: column; /* Cambia la dirección del flex container a columna */
