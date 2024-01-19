@@ -676,7 +676,7 @@ filter: opacity(0.8);
 }
 
 .ware {
-    border: none;
+  border: none;
     height: 15%;
     width: 100%;
     position: fixed;
@@ -745,17 +745,6 @@ filter: opacity(0.8);
     }
  .sombreado{
       width: 60%;
-    }
-    .ware {
-        border: none;
-        height: 10%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100; /* Para colocar el fondo detrás del contenido del navbar */
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg-rotateed/nav.png');
-        background-size: cover;
     }
 }
 
