@@ -660,10 +660,6 @@ filter: opacity(0.8);
     height: auto;
     border-radius: 50%; /* Para un icono redondo */
 }
-.navicons{
-        width: 100%;
-        height: 80px;
-    }
 @media (max-width: 991px) {
     .navbar .modulos-group {
         flex-direction: column; /* Cambia la dirección del flex container a columna */
@@ -760,10 +756,6 @@ filter: opacity(0.8);
         z-index: 100; /* Para colocar el fondo detrás del contenido del navbar */
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg-rotateed/nav.png');
         background-size: cover;
-    }
-    .navicons{
-        width: 80px;
-        height: 50px;
     }
 }
 
