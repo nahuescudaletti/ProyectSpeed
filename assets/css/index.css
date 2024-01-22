@@ -613,7 +613,7 @@ filter: opacity(0.8);
     top: 0;
     left: 0;
     z-index: 100; /* Para colocar el fondo detrás del contenido del navbar */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg-rotateed/nav.png');
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(19, 8, 38, 1)), url('../img/iloveimg/nav.png');
     background-size: cover;
 }
 
