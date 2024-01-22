@@ -82,7 +82,7 @@ section {
 .h2-main {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size:1.8rem;
   color: white;
   text-transform: uppercase;
 }
@@ -607,7 +607,7 @@ filter: opacity(0.8);
 
 .ware {
   border: none;
-    height: 15%;
+    height: 11%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -761,6 +761,41 @@ filter: opacity(0.8);
 .beneficioscards:hover {
   transform: scale(1.05);
 }
+.moudl{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.titulosModulos {
+    font-family: "asap", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px; /* Add margin if needed */
+}
+
+.moduleCard {
+  display: flex;
+    flex-direction: column;
+    align-items: center; /* Añade esta línea para centrar verticalmente */
+    justify-content: center; 
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#130826, #130826) padding-box,
+                linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: right bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+
 
 @media (max-width: 1000px) {
   .manoderecha {
@@ -833,7 +868,7 @@ filter: opacity(0.8);
     width: 150%; /* Ajusta el tamaño de la imagen para tablet */
   }
     .h2-main {
-    font-size: 28px;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -962,3 +997,4 @@ filter: opacity(0.8);
         background-color: rgba(144, 72, 237, 1);
     }
 }
+
